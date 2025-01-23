@@ -1,0 +1,15 @@
+1.依赖
+在虚拟环境中安装环境，只需要安装torch即可，gpu和cpu版本的都能使用，例如：
+在conda中安装torch：conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+
+2.输入格式
+一行一个口令，代表训练集
+
+3.输出格式
+一行一个口令，代表生成的猜测
+
+4.操作流程
+修改PassSeq_Guessers.py中的参数：trainPath和outfile；分别为模型的输入和输出的文件。运行PassSeq_Guessers.py。最终结果在自定义的outfile文件中
+
+
+new_train和new_test就是注释了PassSeq_Guessers.py部分代码，把训练和测试分开了
